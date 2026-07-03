@@ -1,7 +1,7 @@
 import os
 from openai import OpenAI
-from backend.config import settings
-from backend.mock_db import gov_services_db
+from config import settings
+from mock_db import gov_services_db
 
 class AIService:
     def __init__(self):

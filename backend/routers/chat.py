@@ -2,10 +2,10 @@ import uuid
 from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException
 from pydantic import BaseModel
-from backend.config import settings
-from backend.routers.auth import get_current_user
-from backend.services.ai_service import ai_service
-from backend.mock_db import chats_db, messages_db
+from config import settings
+from routers.auth import get_current_user
+from services.ai_service import ai_service
+from mock_db import chats_db, messages_db
 
 router = APIRouter(prefix="/chats", tags=["AI Chat"])
 

@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Depends, HTTPException, Query
-from backend.config import settings
-from backend.mock_db import gov_services_db
+from config import settings
+from mock_db import gov_services_db
 
 router = APIRouter(prefix="/services", tags=["Government Services"])
 

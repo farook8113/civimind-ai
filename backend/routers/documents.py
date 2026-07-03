@@ -4,10 +4,10 @@ from datetime import datetime
 from fastapi import APIRouter, Depends, HTTPException, UploadFile, File, Form
 from pydantic import BaseModel
 from pypdf import PdfReader
-from backend.config import settings
-from backend.routers.auth import get_current_user
-from backend.services.ai_service import ai_service
-from backend.mock_db import documents_db
+from config import settings
+from routers.auth import get_current_user
+from services.ai_service import ai_service
+from mock_db import documents_db
 
 router = APIRouter(prefix="/documents", tags=["Document AI"])
 

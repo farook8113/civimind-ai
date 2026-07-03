@@ -5,8 +5,8 @@ from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 import bcrypt
 from pydantic import BaseModel, EmailStr
-from backend.config import settings
-from backend.mock_db import users_db, profiles_db
+from config import settings
+from mock_db import users_db, profiles_db
 
 router = APIRouter(prefix="/auth", tags=["Authentication"])
 
