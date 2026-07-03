@@ -1,0 +1,31 @@
+# Node / Next.js
+node_modules/
+.next/
+out/
+build/
+.env*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+.env
+*.log
+
+# Mock Database JSON files (ignore local persistent files containing credentials)
+backend/mock_*.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Portable Git
+git/
